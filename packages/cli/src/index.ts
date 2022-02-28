@@ -27,6 +27,7 @@ export async function init(commandConfig?: any /* TODO do better than any */) {
 
   try {
     await command.load();
+
     await command.run(env);
 
     // this is a temporary implementation to support a post-commit hook
