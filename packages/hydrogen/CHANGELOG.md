@@ -5,7 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+<!-- ## [Unreleased] -->
+
+## 0.11.1-experimental.1
+
+### Patch Changes
+
+- 11426471: Fix issue with components that take in the `as` prop not validating other props when a component is passed to `as`.
+- b96179fd: Ensure ProductSeo knows how to handle `featuredImage = null`
+- 2e487b7e: Switch to using Changesets for changelogs.
+- 2d8ab7e2: Hydrogen docs: Preloaded queries and query timing
 
 ### Fixed
 
@@ -60,7 +69,7 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Use hashes as client component ids instead of absolute paths
 - Transition away from deprecated currency selector in favor of country selector
 - Simplify Helmet usage and make it compatible with RSC
-- The `Seo.client` component has been moved from `src/components` to `@shopify/hydrogen`. The props of the `Seo.client` component also changed to always take in `type` and `data`. Refer to the [`Seo` component reference] (../src/components/Seo/README.md) for more details. [#539](https://github.com/Shopify/hydrogen/pull/539)
+- The `Seo.client` component has been moved from `src/components` to `@shopify/hydrogen`. The props of the `Seo.client` component also changed to always take in `type` and `data`. Refer to the [`Seo` component reference](../src/components/Seo/README.md) for more details. [#539](https://github.com/Shopify/hydrogen/pull/539)
 - Standardize cache control header into caching strategies by @wizardlyhel in [#629](https://github.com/Shopify/hydrogen/pull/629)
 - Target future release to use '2022-01' API Version
 - Correct Typescript issue where `as` was a default prop for all components when it should not be

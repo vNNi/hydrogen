@@ -1,0 +1,20 @@
+{
+  "mode": "pre",
+  "tag": "experimental",
+  "initialVersions": {
+    "template-hydrogen-default": "0.11.0",
+    "@shopify/hydrogen-cli": "0.11.0",
+    "create-hydrogen-app": "0.11.0",
+    "eslint-plugin-hydrogen": "0.11.0",
+    "@shopify/generate-docs": "0.11.0",
+    "@shopify/hydrogen": "0.11.0",
+    "hydrogen-playground": "0.11.0",
+    "test-server-components": "0.11.0"
+  },
+  "changesets": [
+    "cyan-beans-drive",
+    "fair-readers-tickle",
+    "friendly-spies-breathe",
+    "weak-panthers-whisper"
+  ]
+}
