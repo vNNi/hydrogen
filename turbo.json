@@ -14,7 +14,7 @@
     },
     "dev": {
       "cache": false,
-      "dependsOn": ["@shopify/hydrogen#build"]
+      "dependsOn": ["@shopify/hydrogen#build", "@shopify/hydrogen-ui#build"]
     }
   }
 }
