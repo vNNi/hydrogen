@@ -49,7 +49,7 @@
     "glob-promise": "^4.2.2",
     "inquirer": "^8.1.2",
     "mime": "^3.0.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "prettier": "^2.4.1",
     "sirv": "^1.0.14"
   },
