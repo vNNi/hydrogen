@@ -159,7 +159,7 @@ var hashImportsPlugin = {
     if (rscViteFileRE.test(id)) {
       return code.replace(/\/\*\s*HASH_BEGIN\s*\*\/\s*([^]+?)\/\*\s*HASH_END\s*\*\//gm, function (_, imports) {
         return imports.trim().replace(/"([^"]+?)":/gm, function (__, relativePath) {
-          var absolutePath = path.resolve(path.dirname(id.split('?')[0]), relativePath);
+          var absolutePath = path.resolve(path.dirname(vite.normalizePath(id.split('?')[0])), relativePath);
           return "\"" + getComponentId(absolutePath) + "\":";
         });
       });
